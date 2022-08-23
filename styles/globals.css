@@ -45,18 +45,19 @@ body {
 }
 
 .whyDifferent{
-  display: flex;
-  justify-content: center;
   font-family: "Myriad Pro";
   color: rgba(255, 90, 141,1);
+}
+
+.different-top{
+  display: grid;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .lowerText{
-  display: flex;
-  align-items: center;
   font-family: "Myriad Pro";
-  justify-content: center;
 
 }
 
@@ -71,12 +72,23 @@ body {
   font-family: "Inter var";
 }
 
+.arrow-pic{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .picButton{
   box-shadow: 0 1px 8px 8px rgba(255, 90, 141,1);
   border-radius: 5px;
-  margin-left: 625px;
   margin-bottom: 50px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .addDiscord{

@@ -87,24 +87,30 @@ function MyApp({ Component, pageProps }) {
             <div className="addDiscord">
                 <a href="https://discord.com/oauth2/authorize?client_id=1001866751941808128&scope=bot&permissions=37054528">
                 <button className="theButton" >Add To Discord</button>
+                    <p id="differentText">
+
+                    </p>
                 </a>
             </div>
         <Component {...pageProps} />
           </div>
       </div>
 
-          <div>
+          <div className="different-top">
           <div className="whyDifferent">
-              <h1 id="differentText">What Makes Us Different?</h1>
+              <h1>What Makes Us Different?</h1>
           </div>
               <h3 className="lowerText">No Need to Type commands all the time We implemented Buttons!</h3>
-
-          <img src="buttons.png" className="picButton"/>
-
+              <img src="buttons.png" alt="" className="picButton"/>
           </div>
-          <img src="spin.png" className="middleRotate" width="250" height="250" id="scrollCommand"/>
+
+          <div className="arrow-pic">
+              <img src="arrow.gif" alt="" className="arrow-pic" height="60px" width="60"/>
+          </div>
+
+
           <div className="whyPagbot">
-              <h1>Commands</h1>
+              <h1 id="scrollCommand">Commands</h1>
           </div>
           <div className="box">
               <div className="box1">
@@ -129,7 +135,7 @@ function MyApp({ Component, pageProps }) {
           <div className="botFooter">
               <h1>Designed by: $hinyy#4899</h1>
               <h1>Copyright © {new Date().getFullYear()} Pag Bot. All right reserved </h1>
-              <img src="25231.png" className="githubIcon" width="75" height="75"/>
+              <img src="25231.png" alt="Github-Repo" className="githubIcon" width="75" height="75"/>
           </div>
       </>
   )
