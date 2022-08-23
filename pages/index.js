@@ -73,7 +73,7 @@ export default function Home() {
                     <h1>What Makes Us Different?</h1>
                 </div>
                 <h3 className="lowerText">No Need to Type commands all the time We implemented Buttons!</h3>
-                <Image src="buttons.png" alt="" className="picButton"/>
+                <Image src="/buttons.png" width={650} height={250} alt="" className="picButton"/>
             </div>
             <div className="whyPagbot">
                 <h1 id="scrollCommand">Commands</h1>
