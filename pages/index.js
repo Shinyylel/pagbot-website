@@ -1,5 +1,4 @@
-import img from '../public/spin.png'
-import pagbot from '../public/pagbot.png'
+import Image from 'next/image'
 
 const commands = [
 
@@ -74,10 +73,7 @@ export default function Home() {
                     <h1>What Makes Us Different?</h1>
                 </div>
                 <h3 className="lowerText">No Need to Type commands all the time We implemented Buttons!</h3>
-                <img src="buttons.png" alt="" className="picButton"/>
-            </div>
-            <div className="arrow-pic">
-                <img src="arrow.gif" alt="" className="arrow-pic" height="60px" width="60"/>
+                <Image src="buttons.png" alt="" className="picButton"/>
             </div>
             <div className="whyPagbot">
                 <h1 id="scrollCommand">Commands</h1>
