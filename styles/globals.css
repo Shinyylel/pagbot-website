@@ -9,10 +9,10 @@ body {
 }
 
 .scrollingTop {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .scrollingTop a {
@@ -74,7 +74,6 @@ body {
 
 .picButton {
     box-shadow: 0 1px 8px 8px rgba(255, 90, 141, 1);
-    border-radius: 5px;
     margin-bottom: 50px;
     width: 100%;
     display: flex;
@@ -210,13 +209,9 @@ a {
     justify-content: right;
     margin-left: 220px;
     padding: 7px;
-    transition: 1s;
-    transform: scale(1);
 }
 
 .githubIcon:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.1);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -21,7 +21,7 @@ export default function MyApp({Component, pageProps}) {
                 <h1>Designed by: $hinyy#4899</h1>
                 <h1>Copyright © {new Date().getFullYear()} Pag Bot. All right reserved </h1>
                 <a href="https://github.com/Shinyylel/pagbot-website">
-                    <Image src="/25231.png" alt="Github" className="githubIcon" width="75" height="75"/>
+                    <Image src="/25231.png" alt="Github" className="githubIcon" width="50" height="50"/>
                 </a>
             </div>
         </>
