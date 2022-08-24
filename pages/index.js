@@ -62,7 +62,6 @@ export default function Home() {
                         <a href="https://discord.com/oauth2/authorize?client_id=1001866751941808128&scope=bot&permissions=37054528">
                             <button className="theButton">Add To Discord</button>
                             <p id="differentText">
-
                             </p>
                         </a>
                     </div>
