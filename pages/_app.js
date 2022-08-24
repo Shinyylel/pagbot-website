@@ -1,144 +1,29 @@
 import '../styles/globals.css'
-import img from "../public/spin.png";
+import Image from 'next/image'
 import "inter-ui/inter.css";
 
-
-const commands = [
-
-    {
-    name: "Clear",
-    description: "Removes all songs in queue"
-    },
-
-    {
-        name: "Now Playing",
-        description: "Shows song that is currently playing"
-    },
-
-    {
-        name: "Pause",
-        description: "Pauses current song"
-    },
-
-    {
-        name: "Play",
-        description: "Plays a song of your choice use /play"
-    },
-
-    {
-        name: "Queue",
-        description: "Gets Queue of all songs in Queue"
-    },
-
-    {
-        name: "Resume",
-        description: "Resumes song currently playing"
-    },
-
-    {
-        name: "Skip",
-        description: "Skips current song"
-    },
-
-    {
-        name: "Stop",
-        description: "Stops playing the song"
-    },
-    {
-        name: "Volume",
-        description: "Changes volume of the bot 1-100"
-    },
-
-]
-
-function MyApp({ Component, pageProps }) {
-
-  return (
-      <>
-      <div>
-
-          <nav className="scrollingTop">
-
-        <nav className="nav">
-            <img src="spin.png" className="rotate" width="75" height="75"/>
-            <h1 className = "titlePag">PAGBOT</h1>
-
-            <div className="topNav">
-
-            <a href="#homePage" className="commandHome">Home</a>
-            <a href="#differentText" className="commandHome">Why Us</a>
-            <a href="#scrollCommand" className="commandHome">Commands</a>
-
-             </div>
-
-        </nav>
-
-        </nav>
-          <p id="homePage"></p>
-
-          <div className="fullBackground">
-
-          <div className="middleText">
-              <h2 id="homePage">
-                  Music was made to enjoy <br/> and listen to with others
-              </h2>
-          </div>
-
-            <div className="addDiscord">
-                <a href="https://discord.com/oauth2/authorize?client_id=1001866751941808128&scope=bot&permissions=37054528">
-                <button className="theButton" >Add To Discord</button>
-                    <p id="differentText">
-
-                    </p>
+export default function MyApp({Component, pageProps}) {
+    return (
+        <>
+            <nav className="scrollingTop">
+                <nav className="nav">
+                    <Image alt="" src="/spin.png" className="rotate" width="75" height="75"/>
+                    <h1 className="titlePag">PAGBOT</h1>
+                    <div className="topNav">
+                        <a href="#homePage" className="commandHome">Home</a>
+                        <a href="#differentText" className="commandHome">Why Us</a>
+                        <a href="#scrollCommand" className="commandHome">Commands</a>
+                    </div>
+                </nav>
+            </nav>
+            <Component {...pageProps} />
+            <div className="botFooter">
+                <h1>Designed by: $hinyy#4899</h1>
+                <h1>Copyright © {new Date().getFullYear()} Pag Bot. All right reserved </h1>
+                <a href="https://github.com/Shinyylel/pagbot-website">
+                    <Image src="/25231.png" alt="Github" className="githubIcon" width="75" height="75"/>
                 </a>
             </div>
-        <Component {...pageProps} />
-          </div>
-      </div>
-
-          <div className="different-top">
-          <div className="whyDifferent">
-              <h1>What Makes Us Different?</h1>
-          </div>
-              <h3 className="lowerText">No Need to Type commands all the time We implemented Buttons!</h3>
-              <img src="buttons.png" alt="" className="picButton"/>
-          </div>
-
-          <div className="arrow-pic">
-              <img src="arrow.gif" alt="" className="arrow-pic" height="60px" width="60"/>
-          </div>
-
-
-          <div className="whyPagbot">
-              <h1 id="scrollCommand">Commands</h1>
-          </div>
-          <div className="box">
-              <div className="box1">
-
-                  {commands.map(command => (
-                      <div key={command}>
-
-                          <div className="titleBold">
-                              {command.name}
-                          </div>
-
-                          <div className="description">
-                              {command.description}
-                          </div>
-
-                      </div>
-                  ))}
-
-              </div>
-          </div>
-
-          <div className="botFooter">
-              <h1>Designed by: $hinyy#4899</h1>
-              <h1>Copyright © {new Date().getFullYear()} Pag Bot. All right reserved </h1>
-              <img src="25231.png" alt="Github-Repo" className="githubIcon" width="75" height="75"/>
-          </div>
-      </>
-  )
+        </>
+    )
 }
-
-export default MyApp
