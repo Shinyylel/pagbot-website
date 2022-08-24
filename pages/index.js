@@ -48,7 +48,7 @@ const commands = [
 
 ]
 
-function Home() {
+export default function Home() {
     return (
         <div id="homePage">
             <div>
@@ -76,6 +76,9 @@ function Home() {
                 <div className="picButton">
                     <Image src="/buttons.png" width={650} height={250} quality={100} alt=""/>
                 </div>
+            </div>
+            <div className="arrow-pic">
+                <Image src="/arrow.gif" width={75} height={50} quality={100} alt=""/>
             </div>
             <div className="whyPagbot">
                 <h1 id="scrollCommand">Commands</h1>
