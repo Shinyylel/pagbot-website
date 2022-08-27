@@ -7,8 +7,10 @@ export default function MyApp({Component, pageProps}) {
         <>
             <nav className="scrollingTop">
                 <nav className="nav">
-                    <Image alt="" src="/spin.png" className="rotate" width="75" height="75"/>
-                    <h1 className="titlePag">PAGBOT</h1>
+                    <div className="pagbot-title">
+                        <Image alt="" src="/spin.png" className="rotate" width="75" height="75"/>
+                        <h1 className="titlePag">PAGBOT</h1>
+                    </div>
                     <div className="topNav">
                         <a href="#homePage" className="commandHome">Home</a>
                         <a href="#differentText" className="commandHome">Why Us</a>
